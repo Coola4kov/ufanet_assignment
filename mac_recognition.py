@@ -109,10 +109,21 @@ def generate_random_mac(amount: int = 10):
 
 
 if __name__ == '__main__':
+    type0 = Mac('73-23-18-10-35-17')
+    type1 = Mac('21:DB:F6:A6:5A:C7')
+    type2 = Mac('205B.0F06.0F9B')
+    type3 = Mac('0E476D3EA453')
+    # type_wrong0 = Mac({})
+    # type_wrong1 = Mac('1')
+    # type_wrong2 = Mac('ytytyt')
+    # type_wrong3 = Mac('21:DB:F6:A6:5A:C7123')
+    # type_wrong4 = Mac('0E476D3EA453FDBC')
+    # type_wrong5 = Mac('73.23-18-10-35-17')
+
+
     test = Mac('1122.3344.55aa')
-    print(test.type)
     print(test.initial_mac_add)
-    test.set_type(2)
+    test.set_type(3)
     print(test)
     test2 = Mac('11-22-33-44-55-AA')
     print(test == 1)
@@ -122,6 +133,7 @@ if __name__ == '__main__':
     print(test != test3)
 
     macs = generate_random_mac()
+    print('\nINITIAL MAC LIST')
     print(macs)
     print('\nBEFORE SORTING')
     for i in macs:
