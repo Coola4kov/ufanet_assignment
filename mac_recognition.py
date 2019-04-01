@@ -132,6 +132,7 @@ if __name__ == '__main__':
     test3 = Mac('223344556677')
     print(test != test3)
 
+
     macs = generate_random_mac()
     print('\nINITIAL MAC LIST')
     print(macs)
